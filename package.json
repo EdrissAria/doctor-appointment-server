@@ -3,16 +3,14 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Your Name",
   "license": "ISC",
-  "description": "",
+  "description": "A simple Node.js server.",
   "dependencies": {
     "body-parser": "^1.20.2",
-    "express": "^4.19.2",
-    "server": "^1.0.39"
+    "express": "^4.19.2"
   }
 }

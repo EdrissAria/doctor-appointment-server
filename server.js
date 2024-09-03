@@ -274,4 +274,10 @@ const getDoctorDetails = get("/api/doctors/:id", (ctx) => {
   return doctor ? json(doctor) : json({ error: "Doctor not found" }, 404);
 });
 
-server({ port: 3333 }, getDoctors, getDoctorDetails);
+const home = get("/", (ctx) => {
+  corsHeaders(ctx);
+  return json({ hello: "world" });
+});
+
+
+server({ port: 3333 }, getDoctors, getDoctorDetails, home);
